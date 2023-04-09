@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navigation bar -->
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+            <img src="images/logo.svg" alt="logo">
+        </div>
+        <div class="nav-list">
+          <ul class="nav-ul">
+            <li><a href="collection.html"> Collections</a></li>
+            <li><a href="#"> Men</a></li>
+            <li><a href="#"> Women</a></li>
+            <li><a href="index.html"> About</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+          </ul>
+        </div>
+        <div class="nav-avatar">
+          <div class="cart-container">
+          <a class="carticon" id="carticon" onclick="openPopup()" ><img src="images/icon-cart.svg" alt=""></a>
+
+          <div class="cart" id="cart">
+            <h2>Fall Limited</h2>
+            <ul class="cart-items"></ul>
+            <p class="total-price">Total: $00.00</p>
+            <p>Thank you for buying</p>
+            <button type="button" onclick="closePopup()" >BUY</button>
+          </div>
+        </div>
+          
+          <a href="#"> <img  class="avatar" src="images/image-avatar.png" alt=""></a>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+    
+    <!-- hero section -->
+    <div class="hero">
+        <div class="images">
+         <img class="product1" src="images/image-product-1.jpg" alt="">
+
+
+         <!-- image selection -->
+         <div class="row">
+          <div class="column">
+            <img src="images/image-product-1-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/image-product-2-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/image-product-3-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+          </div>
+          <div class="column">
+            <img src="images/image-product-4-thumbnail.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+          </div>
+        </div>
+        
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()"><img src="images/icon-close.svg" alt=""></span>
+          <div class="modal-content">
+        
+            <div class="mySlides">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/image-product-1.jpg" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/image-product-2.jpg" style="width: 100%">
+            </div>
+        
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/image-product-3.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/image-product-4.jpg" style="width:100%" >
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)"><img src="images/icon-previous.svg" alt=""></a>
+            <a class="next" onclick="plusSlides(1)"><img src="images/icon-next.svg" alt=""></a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        
+        
+            <div class="column">
+              <img class="demo cursor" src="images/image-product-1.jpg" style="width:50%" onclick="currentSlide(1)" alt="Women">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/image-product-2.jpg" style="width:50%" onclick="currentSlide(2)" alt="Women">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/image-product-3.jpg" style="width:50%" onclick="currentSlide(3)" alt="Men">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/image-product-4.jpg" style="width:50%" onclick="currentSlide(4)" alt="Men">
+            </div>
+          </div>
+        </div>
+      
+        </div>
+        <div class="article">
+      <div> <p class="title"> SNEAKER COMPANY</p></div>
+      <div><h1 class="name">Fall Limited Edition Sneakers</h1></div>
+      <div><p class="about"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed eum
+         ipsam maiores rem dolore nam, optio eos nesciunt. Voluptatem,
+         beatae cumque sit voluptates delectus magnam dolore culpa. Ut, aspernatur itaque?</p></div>
+         <!-- price and button -->
+      <div class="dollars">
+        <div class="discount">
+        
+           <div class="price">
+            <p> $125.00</p>
+           </div>
+           <div class="discount-percent">50%</div>
+    </div>
+        
+      </div>
+      <!-- button -->
+      <div class="buy">
+        <div class="btn-container">
+          <!-- click event -->
+          <button onclick="increase()"><img src="images/icon-plus.svg" alt=""></button>
+          <p class=" count">        </p>
+          <button onclick="decrease()"><img src="images/icon-minus.svg" alt=""></button>
+        </div>
+        <button class="buy-button"> Add to Cart</button>
+      
+
+      </div>
+      
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

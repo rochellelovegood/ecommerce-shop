@@ -32,38 +32,38 @@ cartIcon.addEventListener('click', openPopup);
 
 // nav
 // Get the filter buttons
-var filterMen = document.querySelector('.filter-men');
-var filterWomen = document.querySelector('.filter-women');
+// var filterMen = document.querySelector('.filter-men');
+// var filterWomen = document.querySelector('.filter-women');
 
-// Get all the shoes
-var shoes = document.querySelectorAll('.shoe');
+// // Get all the shoes
+// var shoes = document.querySelectorAll('.shoe');
 
-// Add click event listeners to the filter buttons
-filterMen.addEventListener('click', function() {
-  // Hide all the shoes
-  shoes.forEach(function(shoe) {
-    shoe.style.display = 'none';
-  });
+// // Add click event listeners to the filter buttons
+// filterMen.addEventListener('click', function() {
+//   // Hide all the shoes
+//   shoes.forEach(function(shoe) {
+//     shoe.style.display = 'none';
+//   });
 
-  // Show only men's shoes
-  var menShoes = document.querySelectorAll('.shoe.men');
-  menShoes.forEach(function(shoe) {
-    shoe.style.display = 'block';
-  });
-});
+//   // Show only men's shoes
+//   var menShoes = document.querySelectorAll('.shoe.men');
+//   menShoes.forEach(function(shoe) {
+//     shoe.style.display = 'block';
+//   });
+// });
 
-filterWomen.addEventListener('click', function() {
-  // Hide all the shoes
-  shoes.forEach(function(shoe) {
-    shoe.style.display = 'none';
-  });
+// filterWomen.addEventListener('click', function() {
+//   // Hide all the shoes
+//   shoes.forEach(function(shoe) {
+//     shoe.style.display = 'none';
+//   });
 
-  // Show only women's shoes
-  var womenShoes = document.querySelectorAll('.shoe.women');
-  womenShoes.forEach(function(shoe) {
-    shoe.style.display = 'block';
-  });
-});
+//   // Show only women's shoes
+//   var womenShoes = document.querySelectorAll('.shoe.women');
+//   womenShoes.forEach(function(shoe) {
+//     shoe.style.display = 'block';
+//   });
+// });
 
 
 function openModal() {
